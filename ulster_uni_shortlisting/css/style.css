@@ -1,0 +1,93 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, ol, ul, form, fieldset, legend, figure, table, th, td, caption, hr {margin: 0; padding: 0; width: 100%;}
+
+.page-head{background-color: #041E42;}
+
+a{text-decoration: none;}
+a:hover{opacity: 0.6;}
+
+.site-nav{max-width: 1200px; margin: auto;}
+.site-nav__list{display: flex; justify-content: center; align-items: center;}
+.site-nav__item{color:#FFFFFF; list-style-type: none; font-size: 19px; font-weight: 600; text-transform: uppercase; border-right: 1px solid #ffffff; padding: 30px 20px;}
+.site-nav__item a{color: #FFFFFF;}
+.site-nav__item:last-child{border-right: none;}
+
+.banner{width: 100%;}
+.banner__item{list-style-type: none; overflow-x: hidden; position: relative;}
+.banner__title-container{position: absolute; top: 50%; left: 55%; transform: translate(-50%, -50%); width: max-content;}
+.banner__title{font-size: 80px; color:#FFFFFF; text-transform: uppercase; line-height: 1.2;}
+.banner__title--sub_text{font-size: 20px; color:#FFFFFF;}
+.banner__item .mobile{display:none;}
+
+.band{width: 100%; padding: 75px 0;}
+.band--white{background-color: #FFFFFF;}
+.band--grey{background-color: #e6ebf0;}
+.band h3{text-align: center; color: #041E42; font-size: 35px; margin-bottom: 30px;}
+.band__list{max-width: 1200px; margin: auto; display: flex; align-items: center;}
+.band__list--stretch{align-items: stretch;}
+.band__item{list-style-type: none; overflow: clip;}
+.band__card{width: 100%;}
+.band__card--intro{width: 90%; margin: 0 5%;}
+.band__card h2{color: #041E42; font-size: 40px;}
+.band__card p{color: #041E42; font-size: 21px; line-height: 1.6;}
+.band__card img{width: 100%;}
+.band--double-width{width: 50%;}
+
+.band--financial{width: 23%; background-color: #FFFFFF; margin: 0 1%; padding:0 0 30px; border-radius:10px;}
+.band--financial h4{font-size: 23px; color: #041E42; padding:10px; width:90%;}
+.band--financial h4:hover{text-decoration: underline;}
+.band--financial p{font-size: 18px; padding: 0 10px; width: 90%;}
+
+.band--lifestyle{width: 31%; background-color: #FFFFFF; margin: 0 1%; padding:0 0 30px; border-radius:10px; box-shadow:0 10px 20px rgba(0,0,0,.06),0 6px 6px rgba(0,0,0,.06) ;}
+.band--lifestyle h4{font-size: 23px; color: #041E42; padding:10px; width:90%;}
+.band--lifestyle h4:hover{text-decoration: underline;}
+.band--lifestyle p{font-size: 18px; padding: 0 10px; width: 90%;}
+
+.band--health-fitness h3{text-align: left;}
+.band--health-fitness img{border-radius: 30px;}
+.band--health-fitness ul{margin: 25px 0;}
+.band--health-fitness li{list-style-type: disc; color: #041E42; margin:5px 0;}
+.band--health-fitness a{color:#041E42; font-size: 20px;}
+.band--health-fitness a:hover{text-decoration: underline;}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+  .band__list{flex-wrap: wrap; align-items: stretch;}
+  .band--double-width{width: 100%;}
+
+  .band--financial{width: 96%; margin:20px 2%;}
+  .band--lifestyle{width: 96%; margin:20px 2%;}
+
+  .banner__item .mobile{display:block; margin: auto;}
+  .banner__item .desktop{display:none;}
+
+  .banner__title-container{display: block; width: max-content; position: relative; text-align: center;}
+  .banner__title{display: none;}
+  .banner__title--sub_text{font-size: 20px; color:#FFFFFF; width:75%; display: block; margin: 25px 0;}
+
+  .site-nav__list {flex-wrap: wrap;}
+  .site-nav__item {width: 100%; text-align: center;}
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+
+  .band__list{flex-wrap: wrap; align-items: stretch;}
+  .band--double-width{width: 100%;}
+
+  .band--financial{width: 46%; margin:20px 2%;}
+  .band--lifestyle{width: 46%; margin:20px 2%;}
+
+  .banner__item .mobile{display:block;}
+  .banner__item .desktop{display:none;}
+
+  .banner__title-container{display: block; width: max-content; position: relative; text-align: center;}
+  .banner__title{display: none;}
+  .banner__title--sub_text{font-size: 20px; color:#FFFFFF; width:75%; display: block; margin: 25px 0;}
+
+}
